@@ -3,16 +3,12 @@ import hamberger_btn from './img/icon-menu.png';
 import logo_btn from './img/logo.png';
 import './Navigation.css';
 
-const style ={
-  backgroundColor: 'lightblue',
-  height: '16px'
-}
 function Navigation(){
   return(
     <div className="nav--container">
       <div className="nav-sub--container">
-        <img src={hamberger_btn} alt="hamberger menu" style={style}></img>
-        <img src={logo_btn} alt="logo" style={style}></img>
+        <img src={hamberger_btn} alt="hamberger menu" className="hambeger--btn"></img>
+        <img src={logo_btn} alt="logo" className="logo"></img>
         <ul className="nav-sub--menu">
           <li>직군 전체</li>
           <li>개발</li>
@@ -37,7 +33,7 @@ function Navigation(){
         </ul>
       </div>
       
-      <div>
+      <div className="nav-main--container">
         <ul className="nav-main--menu">
           <li>홈</li>
           <li>채용</li>
