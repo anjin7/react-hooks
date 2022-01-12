@@ -13,7 +13,7 @@ function Navigation(){
     <div className="nav--container">
       {/* Sub navigaion */}
       <div className="nav-sub--container">
-        <MenuIcon />
+        <MenuIcon fonrSize="16px" />
         <img src={logo_btn} alt="logo" className="logo"></img>
         <ul className="nav-sub--menu">
           <li>직군 전체</li>
@@ -54,10 +54,10 @@ function Navigation(){
       {/* Icon navigation */}
       <div className="nav-icon--container">
         <ul className="nav-icon--menu">
-          <li><SearchIcon /></li>
-          <li><NotificationsNoneIcon /></li>
-          <li><AccountCircleIcon /></li>
-          <li><MoreHorizIcon /></li>
+          <li><SearchIcon fonrSize="16px" /></li>
+          <li><NotificationsNoneIcon fonrSize="16px" /></li>
+          <li><AccountCircleIcon fonrSize="16px" /></li>
+          <li><MoreHorizIcon fonrSize="16px" /></li>
         </ul>
       </div>
     </div>
