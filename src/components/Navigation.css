@@ -2,22 +2,19 @@
   display: flex;
   justify-content: space-between;
   width: 1080px;
-  margin: 18px auto;
+  margin: 8px auto;
+  height: 60px;
 }
 
 
 .nav-sub--container {
   background-color: lightblue;
-}
-.nav-sub--container img{
-  margin-right: 16px;
-}
-.nav-sub--container .hambeger--btn {
-  height: 14px;
-  width: 17px;
+  margin: auto 0;
+  height: 24px;
 }
 .nav-sub--container .logo {
   height: 17px;
+  margin-left: 16px;
 }
 .nav-sub--container .nav-sub--menu {
   background-color: lightblue;
@@ -39,6 +36,7 @@
 
 .nav-main--container {
   background-color: lightcoral;
+  margin: auto 0;
 }
 .nav-main--container .nav-main--menu {
   border: 1px solid black;
@@ -47,4 +45,16 @@
 .nav-main--container .nav-main--menu li {
   margin: 0 16px;
   font-size: 14px;
+}
+
+.nav-icon--container {
+  background-color: lightgoldenrodyellow;
+  margin: auto 0;
+}
+.nav-icon--container .nav-icon--menu {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-icon--container .nav-icon--menu li {
+  margin: 0 8px;
 }
