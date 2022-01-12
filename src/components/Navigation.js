@@ -5,12 +5,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import './Navigation.css';
 
 function Navigation(){
   return(
     <div className="nav--container">
+      {/* Sub navigaion */}
       <div className="nav-sub--container">
         <MenuIcon />
         <img src={logo_btn} alt="logo" className="logo"></img>
@@ -37,7 +38,7 @@ function Navigation(){
           <li>공공·복지</li>
         </ul>
       </div>
-      
+      {/* Main navigation */}
       <div className="nav-main--container">
         <ul className="nav-main--menu">
           <li>홈</li>
@@ -50,11 +51,13 @@ function Navigation(){
           <li>AI 합격예측</li>
         </ul>
       </div>
+      {/* Icon navigation */}
       <div className="nav-icon--container">
         <ul className="nav-icon--menu">
           <li><SearchIcon /></li>
           <li><NotificationsNoneIcon /></li>
           <li><AccountCircleIcon /></li>
+          <li><MoreHorizIcon /></li>
         </ul>
       </div>
     </div>
