@@ -1,13 +1,18 @@
 import React from "react";
-import hamberger_btn from './img/icon-menu.png';
+
 import logo_btn from './img/logo.png';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import './Navigation.css';
 
 function Navigation(){
   return(
     <div className="nav--container">
       <div className="nav-sub--container">
-        <img src={hamberger_btn} alt="hamberger menu" className="hambeger--btn"></img>
+        <MenuIcon />
         <img src={logo_btn} alt="logo" className="logo"></img>
         <ul className="nav-sub--menu">
           <li>직군 전체</li>
@@ -43,6 +48,13 @@ function Navigation(){
           <li>커뮤니티</li>
           <li>프리랜서</li>
           <li>AI 합격예측</li>
+        </ul>
+      </div>
+      <div className="nav-icon--container">
+        <ul className="nav-icon--menu">
+          <li><SearchIcon /></li>
+          <li><NotificationsNoneIcon /></li>
+          <li><AccountCircleIcon /></li>
         </ul>
       </div>
     </div>
