@@ -7,17 +7,22 @@
   border: 1px solid black;
 }
 
-
+.nav-menu--container{
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
 .nav-sub--container {
   background-color: lightblue;
   margin: auto 0;
   height: 24px;
 }
-.nav-sub--container .logo {
-  vertical-align: top;
+.nav-menu--container .logo {
+  margin: auto 0;
+  text-align: center;
   height: 17px;
-  margin-left: 16px;
-  border: 1px solid blue;
+  margin-left: 14px;
 }
 .nav-sub--container .nav-sub--menu {
   background-color: lightblue;

@@ -12,10 +12,10 @@ function Navigation(){
   return(
     <div className="nav--container">
       {/* Sub navigaion */}
-      <div className="nav-sub--container">
-        <MenuIcon fontSize="medium" />
-        <img src={logo_btn} alt="logo" className="logo"></img>
-        <ul className="nav-sub--menu">
+      <div className="nav-menu--container">
+        <div className="nav-sub--container">
+          <MenuIcon fontSize="medium" className="hamberger" />        
+          <ul className="nav-sub--menu">
           <li>직군 전체</li>
           <li>개발</li>
           <li>경영·비즈니스</li>
@@ -36,8 +36,10 @@ function Navigation(){
           <li>식·음료</li>
           <li>건설·시설</li>
           <li>공공·복지</li>
-        </ul>
-      </div>
+          </ul>
+        </div>
+        <img src={logo_btn} alt="logo" className="logo" />
+      </div>    
       {/* Main navigation */}
       <div className="nav-main--container">
         <ul className="nav-main--menu">
