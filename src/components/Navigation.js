@@ -56,7 +56,7 @@ function Navigation(){
         <ul className="nav-icon--menu">
           <li><SearchIcon fontSize="medium" /></li>
           <li><NotificationsNoneIcon fontSize="medium" /></li>
-          <li><AccountCircleIcon fontSize="medium" /></li>
+          <li><AccountCircleIcon fontSize="medium" color="disabled" /></li>
           <li><MoreHorizIcon fontSize="medium" /></li>
         </ul>
       </div>

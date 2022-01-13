@@ -1,9 +1,10 @@
 .nav--container {
   display: flex;
   justify-content: space-between;
-  width: 1080px;
+  max-width: 1080px;
   margin: 8px auto;
   height: 60px;
+  border: 1px solid black;
 }
 
 
@@ -13,8 +14,10 @@
   height: 24px;
 }
 .nav-sub--container .logo {
+  vertical-align: top;
   height: 17px;
   margin-left: 16px;
+  border: 1px solid blue;
 }
 .nav-sub--container .nav-sub--menu {
   background-color: lightblue;
@@ -38,14 +41,16 @@
   background-color: lightcoral;
   margin: auto 0;
 }
-.nav-main--container .nav-main--menu {
-  border: 1px solid black;
+.nav-main--container .nav-main--menu {  
+  height: 24px;
   display: flex;
+  align-items: center;
 }
 .nav-main--container .nav-main--menu li {
   margin: 0 16px;
   font-size: 14px;
 }
+
 
 .nav-icon--container {
   background-color: lightgoldenrodyellow;
@@ -54,7 +59,9 @@
 .nav-icon--container .nav-icon--menu {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .nav-icon--container .nav-icon--menu li {
-  margin: 0 8px;
+  margin: auto 8px;
+  border: 1px solid green;
 }
