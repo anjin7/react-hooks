@@ -11,9 +11,8 @@ import './Navigation.css';
 function Navigation(){
   return(
     <div className="nav--container">
-      {/* Sub navigaion */}
-      <div className="nav-menu--container">
-        <div className="nav-sub--container">
+      <div className="nav-sub--container">
+        <div className="nav-menu--container">
           <MenuIcon fontSize="medium" className="hamberger" />        
           <ul className="nav-sub--menu">
           <li>직군 전체</li>
@@ -40,7 +39,7 @@ function Navigation(){
         </div>
         <img src={logo_btn} alt="logo" className="logo" />
       </div>    
-      {/* Main navigation */}
+
       <div className="nav-main--container">
         <ul className="nav-main--menu">
           <li>홈</li>
@@ -53,7 +52,7 @@ function Navigation(){
           <li>AI 합격예측</li>
         </ul>
       </div>
-      {/* Icon navigation */}
+
       <div className="nav-icon--container">
         <ul className="nav-icon--menu">
           <li><SearchIcon fontSize="medium" /></li>

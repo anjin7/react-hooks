@@ -7,24 +7,24 @@
   border: 1px solid black;
 }
 
-.nav-menu--container{
+.nav-sub--container{
   margin: auto 0;
   display: flex;
   justify-content: space-between;
   background-color: lightgray;
 }
-.nav-sub--container {
+.nav-menu--container {
   background-color: lightblue;
   margin: auto 0;
   height: 24px;
 }
-.nav-menu--container .logo {
+.nav-sub--container .logo {
   margin: auto 0;
   text-align: center;
   height: 17px;
   margin-left: 14px;
 }
-.nav-sub--container .nav-sub--menu {
+.nav-menu--container .nav-sub--menu {
   background-color: lightblue;
   position: absolute;
   z-index: 3;
@@ -32,11 +32,11 @@
   visibility:hidden;
   transition: all 0.3s;
 }
-.nav-sub--container:hover .nav-sub--menu{
+.nav-menu--container:hover .nav-sub--menu{
   opacity: 1;
   visibility: visible;
 }
-.nav-sub--container .nav-sub--menu li {
+.nav-menu--container .nav-sub--menu li {
   margin: 20px 16px;
   font-size: 14px;
 }
