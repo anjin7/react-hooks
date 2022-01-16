@@ -4,17 +4,15 @@
   max-width: 1080px;
   margin: 8px auto;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .nav-sub--container{
   margin: auto 0;
   display: flex;
   justify-content: space-between;
-  background-color: lightgray;
 }
 .nav-menu--container {
-  background-color: lightblue;
   margin: auto 0;
   height: 24px;
 }
@@ -25,7 +23,9 @@
   margin-left: 14px;
 }
 .nav-menu--container .nav-sub--menu {
-  background-color: lightblue;
+  height: 100vh;
+  padding-top: 10px;
+  background-color: #f8f8fa;
   position: absolute;
   z-index: 3;
   opacity: 0; 
@@ -37,13 +37,18 @@
   visibility: visible;
 }
 .nav-menu--container .nav-sub--menu li {
-  margin: 20px 16px;
+  margin: 0 20px;
   font-size: 14px;
+  line-height: 2.86;
+  color: #333;
+  font-weight: 700;
+  height: 40px;
+}
+.nav-menu--container .nav-sub--menu li:hover {
+  color: #36f;
 }
 
-
 .nav-main--container {
-  background-color: lightcoral;
   margin: auto 0;
 }
 .nav-main--container .nav-main--menu {  
@@ -58,7 +63,6 @@
 
 
 .nav-icon--container {
-  background-color: lightgoldenrodyellow;
   margin: auto 0;
 }
 .nav-icon--container .nav-icon--menu {
@@ -68,5 +72,4 @@
 }
 .nav-icon--container .nav-icon--menu li {
   margin: auto 8px;
-  border: 1px solid green;
 }
