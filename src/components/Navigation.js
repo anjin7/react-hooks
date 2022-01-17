@@ -42,7 +42,7 @@ function Navigation(){
 
       <div className="nav-main--container">
         <ul className="nav-main--menu">
-          <li><a href="https://www.wanted.co.kr/">홈</a></li>
+          <li><a href="/" className="home">홈</a></li>
           <li><a href="/jobsfeed">채용</a></li>
           <li><a href="/events">이벤트</a></li>
           <li><a href="/salary">직군별 연봉</a></li>
