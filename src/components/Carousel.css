@@ -27,7 +27,9 @@
   margin: 20px;
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 20px;
   color: #333;
+  line-height: 1.5;
 }
 .carousel-card--container h3 {
   margin: 0 20px;
@@ -42,6 +44,14 @@
   background-color: #ececec;
   border: none;
 }
+.carousel-card--container .carousel-card--link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #36f;
+  padding: 6px 8px;
+  margin: 6px 0 0 13px;
+}
+
 
 
 .carousel--container button{

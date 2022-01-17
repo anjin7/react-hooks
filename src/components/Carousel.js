@@ -17,7 +17,7 @@ function Carousel(){
         <h2>개발자 되고싶은 분들?!</h2>
         <h3>프론트엔드 무료 교육과정 참여하기</h3>
         <hr />
-        <a href="/events/pre_onboarding_course_6" className="">
+        <a href="/events/pre_onboarding_course_6" className="carousel-card--link">
           <span>바로가기</span>
         </a>
       </div>
