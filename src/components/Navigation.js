@@ -12,7 +12,7 @@ function Navigation(){
   return(
     <div className="nav--container">
       <div className="nav-sub--container">
-        <div className="nav-menu--container">
+        <div className="nav-sub-menu--container">
           <MenuIcon fontSize="medium" className="hamberger" />        
           <ul className="nav-sub--menu">
           <li>직군 전체</li>
@@ -42,14 +42,14 @@ function Navigation(){
 
       <div className="nav-main--container">
         <ul className="nav-main--menu">
-          <li>홈</li>
-          <li>채용</li>
-          <li>이벤트</li>
-          <li>직군별 연봉</li>
-          <li>이력서</li>
-          <li>커뮤니티</li>
-          <li>프리랜서</li>
-          <li>AI 합격예측</li>
+          <li><a href="https://www.wanted.co.kr/">홈</a></li>
+          <li><a href="/jobsfeed">채용</a></li>
+          <li><a href="/events">이벤트</a></li>
+          <li><a href="/salary">직군별 연봉</a></li>
+          <li><a href="/cv">이력서</a></li>
+          <li><a href="/community">커뮤니티</a></li>
+          <li><a href="https://www.wanted.co.kr/gigs/experts">프리랜서</a></li>
+          <li><a href="/aiscore/resume">AI 합격예측</a></li>
         </ul>
       </div>
 
