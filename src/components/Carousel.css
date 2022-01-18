@@ -1,23 +1,42 @@
 .banner {
   margin: 16px auto;
-  position: relative;
   display: block;
-  max-width: 1060px;
   height: 300px;
+  border: 1px solid red;
+  position: relative;
 }
 
-
+.carousel--window {
+  margin: 0 auto;
+  max-width: 1060px;  
+  height: 300px;
+  position: relative;
+}
+.carousel--window .carousel--list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .carousel {
-  position: relative;
+  position: absolute;
+  top:0;
+  z-index: 0;
+  width: 100%;
+  height: 300px;
 }
-.carousel-img {
+.show {
+  z-index: 1;
+}
+.carousel .carousel-img {  
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 4px;  
 }
-.carousel-card--container {
+.carousel .carousel-card--container {
   position: absolute;
   bottom: 28px;
   left: 34px;
@@ -26,7 +45,7 @@
   background-color: #fff;
   border-radius: 4px;  
 }
-.carousel-card--container h2 {
+.carousel .carousel-card--container h2 {
   margin: 20px;
   margin-bottom: 0;
   font-weight: 700;
@@ -34,7 +53,7 @@
   color: #333;
   line-height: 1.5;
 }
-.carousel-card--container h3 {
+.carousel .carousel-card--container h3 {
   margin: 0 20px;
   height: 44px;
   font-size: 14px;
@@ -42,7 +61,7 @@
   line-height: 1.64;
   color: #333;
 }
-.carousel-card--container hr {
+.carousel .carousel-card--container hr {
   height: 1px;
   background-color: #ececec;
   border: none;
@@ -61,7 +80,7 @@
   border: none;
   cursor: pointer;
 }
-.banner .prev_arrow {
+.banner .prevBtn {
   left: calc((100% - 1210px) / 2);
   position: absolute;
   top: 120px;
@@ -73,7 +92,7 @@
   font-size: 16px;
   overflow: hidden;
 }
-.banner .next_arrow {
+.banner .nextBtn {
   right: calc((100% - 1210px) / 2);
   position: absolute;
   top: 120px;
