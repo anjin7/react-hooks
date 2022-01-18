@@ -1,5 +1,4 @@
-.carousel--container {
-  max-width: 1080px;  
+.banner {
   margin: 16px auto;
   position: relative;
   display: block;
@@ -7,13 +6,17 @@
   height: 300px;
 }
 
+
+
+.carousel {
+  position: relative;
+}
 .carousel-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 4px;  
 }
-
 .carousel-card--container {
   position: absolute;
   bottom: 28px;
@@ -54,11 +57,11 @@
 
 
 
-.carousel--container button{
+.banner button{
   border: none;
   cursor: pointer;
 }
-.carousel--container .prev_arrow {
+.banner .prev_arrow {
   left: calc((100% - 1210px) / 2);
   position: absolute;
   top: 120px;
@@ -68,8 +71,9 @@
   border-radius: 15px;
   background-color: #fff;
   font-size: 16px;
+  overflow: hidden;
 }
-.carousel--container .next_arrow {
+.banner .next_arrow {
   right: calc((100% - 1210px) / 2);
   position: absolute;
   top: 120px;
@@ -79,4 +83,19 @@
   border-radius: 15px;
   background-color: #fff;
   font-size: 16px;
+  overflow: hidden;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-img--container {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-img--container {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
 }
