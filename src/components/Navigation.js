@@ -37,30 +37,29 @@ function Navigation(){
           <li>공공·복지</li>
           </ul>
         </div>
-        <img src={logo_btn} alt="logo" className="logo" />
+        <a href="/"><img src={logo_btn} alt="logo" className="logo" /></a>
       </div>    
 
       <div className="nav-main--container">
         <ul className="nav-main--menu">
-          <li><a href="/" className="home">홈</a></li>
+          <li><a href="/" className="hidden">홈</a></li>
           <li><a href="/jobsfeed">채용</a></li>
           <li><a href="/events">이벤트</a></li>
-          <li><a href="/salary">직군별 연봉</a></li>
-          <li><a href="/cv">이력서</a></li>
-          <li><a href="/community">커뮤니티</a></li>
-          <li><a href="https://www.wanted.co.kr/gigs/experts">프리랜서</a></li>
-          <li><a href="/aiscore/resume">AI 합격예측</a></li>
+          <li><a href="/salary" className="toggle">직군별 연봉</a></li>
+          <li><a href="/cv" className="toggle">이력서</a></li>
+          <li><a href="/community" className="toggle">커뮤니티</a></li>
+          <li><a href="https://www.wanted.co.kr/gigs/experts" className="toggle">프리랜서</a></li>
+          <li><a href="/aiscore/resume" className="toggle">AI 합격예측</a></li>
         </ul>
       </div>
 
-      <div className="nav-icon--container">
-        <ul className="nav-icon--menu">
-          <li><SearchIcon fontSize="medium" /></li>
-          <li><NotificationsNoneIcon fontSize="medium" /></li>
-          <li><AccountCircleIcon fontSize="medium" color="disabled" /></li>
-          <li><MoreHorizIcon fontSize="medium" /></li>
-        </ul>
-      </div>
+      <ul className="nav-icon--menu">
+          <li><button><SearchIcon fontSize="medium" /></button></li>
+          <li><button><NotificationsNoneIcon fontSize="medium" /></button></li>
+          <li><button className="toggle"><AccountCircleIcon fontSize="medium" color="disabled" /></button></li>
+          <li><button className="hidden"><MoreHorizIcon fontSize="medium" /></button></li>
+      </ul>
+      
     </div>
   )
 }
