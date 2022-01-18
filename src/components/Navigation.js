@@ -14,7 +14,7 @@ function Navigation(){
       <div className="nav-sub--container">
         <div className="nav-sub-menu--container">
           <MenuIcon fontSize="medium" className="hamberger" />        
-          <ul className="nav-sub--menu">
+          <ul className="nav-sub-menu">
           <li>직군 전체</li>
           <li>개발</li>
           <li>경영·비즈니스</li>

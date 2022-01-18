@@ -7,45 +7,47 @@
   height: 50px;
 }
 
-.nav-sub--container{
+.nav-sub--container {
   margin: auto 0;
   display: flex;
   justify-content: space-between;
-}
-.nav-sub-menu--container {
-  margin: auto 0;
-  height: 24px;
-}
-.nav-sub-menu--container .nav-sub--menu {
-  height: 100vh;
-  padding-top: 10px;
-  background-color: #f8f8fa;
-  position: absolute;
-  z-index: 3;
-  opacity: 0; 
-  visibility:hidden;
-  transition: all 0.3s;
-}
-.nav-sub-menu--container:hover .nav-sub--menu{
-  opacity: 1;
-  visibility: visible;
-}
-.nav-sub-menu--container .nav-sub--menu li {
-  margin: 0 20px;
-  font-size: 14px;
-  line-height: 2.86;
-  color: #333;
-  font-weight: 700;
-  height: 40px;
-}
-.nav-sub-menu--container .nav-sub--menu li:hover {
-  color: #36f;
 }
 .nav-sub--container .logo {
   margin: auto 0;
   text-align: center;
   height: 17px;
   margin-left: 14px;
+}
+.nav-sub-menu--container {
+  margin: auto 0;
+  height: 24px;
+}
+.nav-sub-menu--container .nav-sub-menu {
+  height: calc(100vh - 50px);
+  width: 220px;
+  padding-top: 10px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  opacity: 0; 
+  visibility:hidden;
+  transition: all 0.3s;
+}
+.nav-sub-menu--container:hover .nav-sub-menu{
+  opacity: 1;
+  visibility: visible;
+}
+.nav-sub-menu--container .nav-sub-menu li {
+  padding: 0 20px;  
+  font-size: 14px;
+  line-height: 2.86;
+  color: #333;
+  font-weight: 700;
+  height: 40px;
+}
+.nav-sub-menu--container .nav-sub-menu li:hover {
+  color: #36f;
+  background-color: #f7f9fa;
 }
 
 
@@ -87,4 +89,13 @@
 }
 .nav-icon--container .nav-icon--menu li {
   margin: auto 8px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+
 }
