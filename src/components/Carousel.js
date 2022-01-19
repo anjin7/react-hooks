@@ -26,6 +26,27 @@ const slide = [
   'alt': "개발자 성장 비결 공개!",
   'h3': "Velog, 글 쓰는 개발자들의 이야기",
 },
+{
+  'id': 4,
+  'href': "/events/portfolio_contents_29cm",
+  'img': "https://static.wanted.co.kr/images/banners/1487/0d36f0b5.jpg",
+  'alt': "포트폴리오를 부탁해!",
+  'h3': "디자이너의 포폴 살펴보기",
+},
+{
+  'id': 5,
+  'href': "/events/livetalk28",
+  'img': "https://static.wanted.co.kr/images/banners/1484/b2853456.jpg",
+  'alt': "성장하는 개발자가 되려면?",
+  'h3': "OOO 검색하지 말 것!",
+},
+{
+  'id': 6,
+  'href': "/events/21_12_s08_b01",
+  'img': "https://static.wanted.co.kr/images/banners/1488/baa54448.jpg",
+  'alt': "UX 디자이너의 커리어 설계",
+  'h3': "브랜드 가치를 더하는 디자인",
+},
 ];
 
 function Carousel(){
@@ -33,7 +54,7 @@ function Carousel(){
     <div className="banner">
       <div className="carousel--window">
         <div className="carousel--list">
-          <div className="carousel left" id={slide[0].id}>
+          <div className="carousel center" id={slide[0].id}>
             <a href={slide[0].href}>
               <img src={slide[0].img} alt={slide[0].alt} className="carousel-img" />
             </a>
@@ -46,7 +67,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel center" id={slide[1].id}>
+          <div className="carousel right" id={slide[1].id}>
             <a href={slide[1].href}>
               <img src={slide[1].img} alt={slide[1].alt} className="carousel-img" />
             </a>
@@ -59,7 +80,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel right" id={slide[2].id}>
+          <div className="carousel" id={slide[2].id}>
             <a href={slide[2].href}>
               <img src={slide[2].img} alt={slide[2].alt} className="carousel-img" />
             </a>
@@ -72,12 +93,52 @@ function Carousel(){
               </a>
             </div>
           </div>
+          <div className="carousel" id={slide[3].id}>
+            <a href={slide[3].href}>
+              <img src={slide[3].img} alt={slide[3].alt} className="carousel-img" />
+            </a>
+            <div className="carousel-card--container">
+              <h2>{slide[3].alt}</h2>
+              <h3>{slide[3].h3}</h3>
+              <hr />
+              <a href={slide[3].href} className="carousel-card--link">
+                <span>바로가기</span>
+              </a>
+            </div>
+          </div>
+          <div className="carousel" id={slide[4].id}>
+            <a href={slide[4].href}>
+              <img src={slide[4].img} alt={slide[4].alt} className="carousel-img" />
+            </a>
+            <div className="carousel-card--container">
+              <h2>{slide[4].alt}</h2>
+              <h3>{slide[4].h3}</h3>
+              <hr />
+              <a href={slide[4].href} className="carousel-card--link">
+                <span>바로가기</span>
+              </a>
+            </div>
+          </div>
+          <div className="carousel left" id={slide[5].id}>
+            <a href={slide[5].href}>
+              <img src={slide[5].img} alt={slide[4].alt} className="carousel-img" />
+            </a>
+            <div className="carousel-card--container">
+              <h2>{slide[5].alt}</h2>
+              <h3>{slide[5].h3}</h3>
+              <hr />
+              <a href={slide[5].href} className="carousel-card--link">
+                <span>바로가기</span>
+              </a>
+            </div>
+          </div>
         </div>        
       </div>
       <button type="button"  className="prevBtn"><ArrowBackIosNewIcon fontSize="small" /></button>
       <button type="button"  className="nextBtn"><ArrowForwardIosIcon fontSize="small" /></button>
     </div>
   )
-}
+};
+
 
 export default Carousel;
