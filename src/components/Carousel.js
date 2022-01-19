@@ -33,7 +33,7 @@ function Carousel(){
     <div className="banner">
       <div className="carousel--window">
         <div className="carousel--list">
-          <div className="carousel" id={slide[0].id}>
+          <div className="carousel left" id={slide[0].id}>
             <a href={slide[0].href}>
               <img src={slide[0].img} alt={slide[0].alt} className="carousel-img" />
             </a>
@@ -46,7 +46,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel show" id={slide[1].id}>
+          <div className="carousel center" id={slide[1].id}>
             <a href={slide[1].href}>
               <img src={slide[1].img} alt={slide[1].alt} className="carousel-img" />
             </a>
@@ -59,7 +59,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel" id={slide[2].id}>
+          <div className="carousel right" id={slide[2].id}>
             <a href={slide[2].href}>
               <img src={slide[2].img} alt={slide[2].alt} className="carousel-img" />
             </a>

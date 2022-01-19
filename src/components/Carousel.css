@@ -4,6 +4,7 @@
   height: 300px;
   border: 1px solid red;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel--window {
@@ -27,9 +28,17 @@
   width: 100%;
   height: 300px;
 }
-.show {
+.carousel--list .center {
   z-index: 1;
 }
+.carousel--list .left {
+  left: -1080px;
+}
+.carousel--list .right {
+  right: -1080px;
+}
+
+
 .carousel .carousel-img {  
   width: 100%;
   height: 100%;
@@ -70,10 +79,10 @@
   text-decoration: none;
   font-size: 14px;
   color: #36f;
+  font-weight: 600;
   padding: 6px 8px;
   margin: 6px 0 0 13px;
 }
-
 
 
 .banner button{
@@ -106,15 +115,32 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .carousel-img--container {
+@media (max-width: 1199px) {
+  .carousel {
     height: 183px;
     border-radius: 3px 3px 0 0;
   }
-}
-@media (max-width: 767px) {
-  .carousel-img--container {
+  .carousel .carousel-card--container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: inherit;
     height: 183px;
-    border-radius: 3px 3px 0 0;
+    text-align: center;
+  }
+  .carousel .carousel-card--container h2 {
+    font-size: 18px;
+  }
+  .carousel .carousel-card--container h3 {
+    font-size: 13px;
+    height: 28px;
+  }
+  .carousel .carousel-card--container hr {
+    display: none;
+  }
+  .carousel-card--container .carousel-card--link {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
   }
 }
