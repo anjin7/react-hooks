@@ -1,9 +1,7 @@
 import React from 'react';
 import './Carousel.css';
-import './slide.js';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
 
 const slide = [
 {
@@ -68,7 +66,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel">
+          <div className="carousel right">
             <a href={slide[1].href}>
               <img src={slide[1].img} alt={slide[1].alt} className="carousel-img" />
             </a>
@@ -120,7 +118,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel">
+          <div className="carousel left">
             <a href={slide[5].href}>
               <img src={slide[5].img} alt={slide[5].alt} className="carousel-img" />
             </a>
