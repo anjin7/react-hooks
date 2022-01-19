@@ -54,7 +54,7 @@ function Carousel(){
     <div className="banner">
       <div className="carousel--window">
         <div className="carousel--list">
-          <div className="carousel center" id={slide[0].id}>
+          <div className="carousel center">
             <a href={slide[0].href}>
               <img src={slide[0].img} alt={slide[0].alt} className="carousel-img" />
             </a>
@@ -67,7 +67,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel right" id={slide[1].id}>
+          <div className="carousel right">
             <a href={slide[1].href}>
               <img src={slide[1].img} alt={slide[1].alt} className="carousel-img" />
             </a>
@@ -80,7 +80,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel" id={slide[2].id}>
+          <div className="carousel">
             <a href={slide[2].href}>
               <img src={slide[2].img} alt={slide[2].alt} className="carousel-img" />
             </a>
@@ -93,7 +93,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel" id={slide[3].id}>
+          <div className="carousel">
             <a href={slide[3].href}>
               <img src={slide[3].img} alt={slide[3].alt} className="carousel-img" />
             </a>
@@ -106,7 +106,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel" id={slide[4].id}>
+          <div className="carousel">
             <a href={slide[4].href}>
               <img src={slide[4].img} alt={slide[4].alt} className="carousel-img" />
             </a>
@@ -119,9 +119,9 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel left" id={slide[5].id}>
+          <div className="carousel left">
             <a href={slide[5].href}>
-              <img src={slide[5].img} alt={slide[4].alt} className="carousel-img" />
+              <img src={slide[5].img} alt={slide[5].alt} className="carousel-img" />
             </a>
             <div className="carousel-card--container">
               <h2>{slide[5].alt}</h2>
@@ -132,13 +132,12 @@ function Carousel(){
               </a>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
       <button type="button"  className="prevBtn"><ArrowBackIosNewIcon fontSize="small" /></button>
       <button type="button"  className="nextBtn"><ArrowForwardIosIcon fontSize="small" /></button>
     </div>
   )
 };
-
 
 export default Carousel;
