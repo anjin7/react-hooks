@@ -1,5 +1,6 @@
 import React from 'react';
 import './Carousel.css';
+import './slide.js';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -49,7 +50,7 @@ const slide = [
 },
 ];
 
-function Carousel(){
+function Carousel(){  
   return(
     <div className="banner">
       <div className="carousel--window">
@@ -67,7 +68,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel right">
+          <div className="carousel">
             <a href={slide[1].href}>
               <img src={slide[1].img} alt={slide[1].alt} className="carousel-img" />
             </a>
@@ -119,7 +120,7 @@ function Carousel(){
               </a>
             </div>
           </div>
-          <div className="carousel left">
+          <div className="carousel">
             <a href={slide[5].href}>
               <img src={slide[5].img} alt={slide[5].alt} className="carousel-img" />
             </a>
@@ -137,6 +138,7 @@ function Carousel(){
       <button type="button"  className="prevBtn"><ArrowBackIosNewIcon fontSize="small" /></button>
       <button type="button"  className="nextBtn"><ArrowForwardIosIcon fontSize="small" /></button>
     </div>
+
   )
 };
 

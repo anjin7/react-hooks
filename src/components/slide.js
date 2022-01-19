@@ -16,4 +16,4 @@ function carouselSlide(){
   }
 }
 carouselSlide();
-setInterval(carouselSlide, 3000);
+setInterval(carouselSlide, 5000);
