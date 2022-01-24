@@ -12,7 +12,7 @@ function App() {
       </header>
       <section>
         <Carousel />
-      </section>
+      </section>        
     </div>
   );
 }
